@@ -3,7 +3,7 @@ body {background-color: azure;
 #wrapper {display: block;margin: auto;width: 80%;
     background-color: white;padding-bottom: 10px;}
 #banner {position: relative;}
-img#myphoto {position: absolute;bottom: 40px; left: 20px;width: 180;}
+img#myphoto {position: absolute;bottom: 40px; left: 20px;width: 180px;}
 img#imgHeader{width: 100%;}
 h1{padding-left: 20px; color: #914700;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
 h3{padding-left: 30px; color: #4e873a;
