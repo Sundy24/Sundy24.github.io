@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retrieve Grade</title>
+    <link href="css/grade.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+    <div id="wrapper">
+        <h1>Retrieve your grade</h1>
+        <form action="https://mumstudents.org/params.php">
+            <label>Name:</label> 
+            <input type="text" id="name" name="name"> <br>
+            <label>Student ID <span class="red">* </span>: </label>
+            <input type="text" id="studentID" name="studentID" required><br>
+            <label>Assignments:</label>
+            <select id="assignment" name="assignment">
+                <option value="homepage">Homepage</option>
+                <option value="aboutme">About Me Page</option>
+                <option value="pie">Pie Receipe Page</option>
+                <option value="movie">Movie Review Page</option>
+            </select>
+            <p> Please Select Your Entry.</p>
+            <input type="radio" name="intake" value="aug2022"> Aug 2022
+            <input type="radio" name="intake" value="nov2022"> Nov 2022
+            <input type="radio" name="intake" value="jan2023"> Jan 2023
+            <span class="seperator"></span>
+            <input type="checkbox" name="comfirmation" value="yes" required> I am only looking up for my own grade.
+            
+            <span class="seperator"></span>
+
+            <div class="btnArea">
+                <button type="reset" value="Reset">Reset</button>
+                <button type="submit" value="Submit">Get Grade!</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
