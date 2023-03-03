@@ -13,6 +13,4 @@ button{background-color: lightpink; font-size: 11pt; font-weight: bold; padding:
   margin-top:5px; border: 1px solid #777;box-shadow: 1px 1px #777;}
 button:hover{border: 1px solid white;}
 img#backimg{width:20px; vertical-align: middle;}
-#validate{
-    text-align: left; margin-top: 40px;
-}
+#validate{text-align: left; margin-top: 40px;}

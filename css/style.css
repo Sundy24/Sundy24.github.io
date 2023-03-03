@@ -21,7 +21,7 @@ ol{padding-left: 80px;}
 ol li::marker {
     color: #4e873a;  font-weight: bold; width: 1em;
 }
-a {text-decoration: none;}
+a {text-decoration: none;color: #914700}
 a:hover{font-weight: bold;}
 .column {
     float: left;
