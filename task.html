@@ -5,8 +5,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task List</title>
+    <link href="css/task.css" type="text/css" rel="stylesheet"/>
+    <script>
+        function addtask(){
+            var task = document.getElementById('task').value;
+            if(!task){
+                alert("Please Enter A Task.")
+            }
+            else{
+                if(localStorage.tasklist){
+                    localStorage.tasklist += task + "<br>";
+                }
+                else{
+                    localStorage.tasklist = task + "<br>";
+                }
+                document.getElementById('tasklist').innerHTML = localStorage.tasklist;
+                document.getElementById('task').value = "";
+            }
+        }
+        function cleartask(){
+            localStorage.removeItem("tasklist");
+            document.getElementById('tasklist').innerHTML = "";
+        }
+        function getTaskList(){
+            if(localStorage.tasklist){
+                document.getElementById('tasklist').innerHTML = localStorage.tasklist;
+            }
+        }
+    </script>
 </head>
-<body>
-    
+<body onload="getTaskList();">
+    <div id="wrapper">
+        <h1>Task List</h1>
+        <div class="container">
+            <div class="item">
+                <label>Task</label> 
+                <input type="text" id="task" name="task">
+                <button id="add" onclick="addtask();">Add Task</button>
+                <button id="clear" onclick="cleartask();">Clear Tasks</button>
+            </div>
+            <div class="item">
+                <label>Task List</label> 
+                <div id="tasklist">
+
+                </div>
+            </div>
+        
+            
+        </div>
+       
+    </div>
 </body>
 </html>
