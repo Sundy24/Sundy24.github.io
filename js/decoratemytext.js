@@ -32,7 +32,6 @@ function boldFont(){
         mytext.style.fontWeight = "normal";
         mytext.className = "";
         removeBackground();
-        window.reload
     }
 }
 function addBackground(){
