@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASCIImation</title>
+    <link href="css/ascii.css" type="text/css" rel="stylesheet"/> 
+</head>
+<body>
+    <div id="container">
+        <h1> CS472: ASCII Animation Viewer</h1>
+        <textarea id="txtDisplay" rows="20" cols="80"></textarea>
+        <div class="controlarea">
+            <fieldset>
+                <legend>Play Controls : </legend>
+                <button id="btnStart">Start</button>
+                <button id="btnStop" disabled>Stop</button>
+            </fieldset>
+            <fieldset>
+                <legend>Animation : </legend>
+                <select id="ddAnimation">
+                    <option>Blank</option>
+                    <option>Exercise</option>
+                    <option>Juggler</option>
+                    <option>Bike</option>
+                    <option>Dive</option>
+                    <option>Custom</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Size : </legend>
+                <select id="ddSize">
+                    <option value="7">Tiny</option>
+                    <option value="10">Small</option>
+                    <option value="12" selected>Medium</option>
+                    <option value="16">Large</option>
+                    <option value="24">Extra Large</option>
+                    <option value="32">XXL</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Speed : </legend>
+                <input type="checkbox" id="chkSpeed">Turbo
+            </fieldset>
+        </div>
+        <div class="validator">
+            <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fsundy24.github.io%2Fascii.html">
+                <img src="http://mumstudents.org/cs472/2014-09/images/w3c-html.png" alt="html validator"/>
+              </a><br>
+              <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fsundy24.github.io%2Fcss%2Fascii.css">
+                <img src="http://mumstudents.org/cs472/2014-09/images/w3c-css.png" alt="css validator"/>
+                </a><br>
+                <a href="https://webster.cs.washington.edu/jslint/?referer">
+                    <img src="http://mumstudents.org/cs472/2014-09/images/w3c-js.png" alt="css validator"/>
+                </a>
+        </div>
+    </div>
+</body>
+<script src="js/jquery-3.6.3.min.js"></script>
+<script src="js/animations.js"></script>
+<script src="js/ascii.js"></script>
+
+</html>
