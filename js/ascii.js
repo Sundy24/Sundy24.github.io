@@ -11,7 +11,8 @@ $(document).ready(function(){
 
         $('#txtDisplay').val('');
         frames = [];
-
+        frameIndex  = 0;
+        
         let txt =ANIMATIONS[$("#ddAnimation").val()];
         frames = txt.split("=====\n");
 
