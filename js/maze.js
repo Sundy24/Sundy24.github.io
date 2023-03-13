@@ -21,25 +21,24 @@ $(document).ready(function() {
     });
 
     function gameStart(){
+        //if(isStarted)  gameStop();
         isStarted = true;
+        $(".boundary").removeClass("youlose");
         $(".boundary").on("mouseover");
         $("#boundary1").on("mouseover");
         $("#maze").on("mouseleave");
     }
     function gameStop(){
         isStarted = false;
-        $(".boundary").off("mouseover");
-        $("#boundary1").off("mouseover");
-        $("#maze").off("mouseleave");
+        //$(".boundary").off("mouseover");
+        //$("#boundary1").off("mouseover");
+        //$("#maze").off("mouseleave");
     }
 
-    $("#start").click(function() {
+    $("#start").click(function() {   
         gameStart();
-        if ($(".boundary").hasClass('youlose'))
-            $(".boundary").removeClass("youlose");
         $("#status").text("Playing...");
         $("#status").css("color", "gold");
-        
     });
 
     $("#end").click(function() {
