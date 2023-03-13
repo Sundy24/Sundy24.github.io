@@ -11,7 +11,7 @@ $(document).ready(function() {
             $(this).addClass("youlose");
         }
     });
-    $("#maze").mouseleave(function() {
+    $("#maze").mouseout(function() {
         if (isStarted) {
         $(".boundary").addClass("youlose");
         $("#status").text("You lose!");
@@ -24,13 +24,13 @@ $(document).ready(function() {
         isStarted = true;
         $(".boundary").on("mouseover");
         $("#boundary1").on("mouseover");
-        $("#maze").on("mouseleave");
+        $("#maze").on("mouseout");
     }
     function gameStop(){
         isStarted = false;
         $(".boundary").off("mouseover");
         $("#boundary1").off("mouseover");
-        $("#maze").off("mouseleave");
+        $("#maze").off("mouseout");
     }
 
     $("#start").click(function() {
