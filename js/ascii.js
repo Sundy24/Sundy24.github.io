@@ -54,6 +54,11 @@ $(document).ready(function(){
         
     });
 
+    $("#ddAnimation").change(function(){
+         let txt =ANIMATIONS[$("#ddAnimation").val()];
+        $("#txtDisplay").val(txt);
+    });
+
     $("#ddSize").change(function(){
         $("#txtDisplay").css('font-size',this.value+'px');
     });
